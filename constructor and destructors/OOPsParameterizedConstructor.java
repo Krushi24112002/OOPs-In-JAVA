@@ -9,25 +9,26 @@
 
 import java.util.*;
 
-public class OOPsParameterizedConstructor {
+// Creating Class
+class Person {
+    // Class Properties
+    String name;
+    int age;
 
-    // Creating Class
-    static class Person {
-        String name;
-        int age;
-
-        // Creating Parameterized Constructor
-        Person(String Personname, int PersonAge) {
-            name = Personname;
-            age = PersonAge;
-        }
-
-        // Creating Class Function
-        void PersonDetail() {
-            System.out.println(name + " " + age);
-        }
-
+    // Creating Parameterized Constructor
+    Person(String Personname, int PersonAge) {
+        name = Personname;
+        age = PersonAge;
     }
+
+    // Creating Class Function
+    void PersonDetail() {
+        System.out.println("Your Name Is " + name + " " + "Your Age Is " + age);
+    }
+
+}
+
+class OOPsParameterizedConstructor {
 
     public static void main(String[] args) {
 
