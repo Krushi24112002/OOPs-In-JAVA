@@ -3,7 +3,7 @@
 
 // Creating Parent Class 
 final class Bike {
-    // Creating Parent Class Function(Nethod)
+    // Creating Parent Class Function(Method)
     void run() {
         System.out.println("Running The Bike");
     }
