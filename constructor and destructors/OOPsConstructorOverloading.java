@@ -2,6 +2,7 @@
 /*
 A constructor is just like a method(Function) in Java, but it does not have any return type. It can
 also be overloaded, just like other methods.
+
 Constructor overloading is a tool/technique of having more than one constructor in the
 class with different no of the parameters. Each constructor performs a different task.
 The compiler differentiates them by the total number of parameters and their types.
@@ -13,30 +14,30 @@ different purpose.
 
 import java.util.*;
 
-public class OOPsConstructorOverloading {
+class Person {
 
-    static class Person {
+    // Creating Properties
+    String name;
+    int age;
 
-        // Creating Properties
-        String name;
-        int age;
-
-        // Constructore -1
-        Person(String PersonName, int PersonAge) {
-            name = PersonName;
-            age = PersonAge;
-        }
-
-        // Constrctore -2
-        Person(String PersonName) {
-            name = PersonName;
-        }
-
-        // Creating Class Function
-        void PersonDetail() {
-            System.out.println(name + " " + age);
-        }
+    // Constructore -1
+    Person(String PersonName, int PersonAge) {
+        name = PersonName;
+        age = PersonAge;
     }
+
+    // Constrctore -2
+    Person(String PersonName) {
+        name = PersonName;
+    }
+
+    // Creating Class Function(Method)
+    void PersonDetail() {
+        System.out.println("Your Name Is " + name + " " + "Your Age Is " + age);
+    }
+}
+
+public class OOPsConstructorOverloading {
 
     public static void main(String[] args) {
 
