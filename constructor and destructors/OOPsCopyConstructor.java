@@ -3,33 +3,33 @@
 
 import java.util.*;
 
-public class OOPsCopyConstructor {
+// Creating Class
 
-    // Creating Class
+class Person {
 
-    static class Person {
+    // Creating Class Properties
+    String name;
+    int age;
 
-        // Creating Properties
-        String name;
-        int age;
-
-        // Creating Parameterized Constructor
-        Person(String PersonName, int PersonAge) {
-            name = PersonName;
-            age = PersonAge;
-        }
-
-        // Creating Copy Constructer
-        Person(Person c) {
-            name = c.name;
-            age = c.age;
-        }
-
-        // Creating Class Function
-        void PersonDetail() {
-            System.out.println(name + " " + age);
-        }
+    // Creating Parameterized Constructor
+    Person(String PersonName, int PersonAge) {
+        name = PersonName;
+        age = PersonAge;
     }
+
+    // Creating Copy Constructer
+    Person(Person c) {
+        name = c.name;
+        age = c.age;
+    }
+
+    // Creating Class Function
+    void PersonDetail() {
+        System.out.println("Your Name Is " + name + " " + "Your Age Is " + age);
+    }
+}
+
+public class OOPsCopyConstructor {
 
     public static void main(String[] args) {
 
