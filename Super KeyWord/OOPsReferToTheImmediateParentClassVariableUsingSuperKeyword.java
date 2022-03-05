@@ -26,7 +26,7 @@ class Dog extends Animal {
 public class OOPsReferToTheImmediateParentClassVariableUsingSuperKeyword {
     public static void main(String[] args) {
 
-        // Creating Object
+        // Creating Object Using new KeyWord
         Dog d = new Dog();
         d.PrintColor();
 
