@@ -22,6 +22,8 @@ class Encapsulation {
 
     public String getname() {
         return name;
+          // OR This Type Can Also Write
+          // return this.name;
     }
 
     public String getsurname() {
@@ -40,7 +42,7 @@ class Encapsulation {
         surname = PersonSurName;
     }
 
-    void setage(int PersonAge) {
+    public void setage(int PersonAge) {
         age = PersonAge;
     }
 
@@ -50,7 +52,7 @@ public class OOPsEncapsulation {
 
     public static void main(String[] args) {
 
-        // Creating Class Object
+        // Creating Class Object Using new KeyWord
         Encapsulation PersonDetail = new Encapsulation();
         PersonDetail.setname("KRUSHI");
         PersonDetail.setsurname("MONPARA");
